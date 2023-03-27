@@ -6,6 +6,12 @@
 package proyecto1;
 
 import java.util.Scanner;
+import proyecto1.objetos.Cancion;
+import proyecto1.objetos.Circun;
+import proyecto1.objetos.Libro;
+import proyecto1.objetos.Operacion;
+import proyecto1.objetos.Puntos;
+import proyecto1.objetos.Rectangulo;
 import proyecto1.objetos.Usuario;
 
 
@@ -20,14 +26,55 @@ public class Proyecto1 {
      */
     public static void main(String[] args) {
         Scanner leer = new Scanner (System.in);
-        System.out.println("Ingrese su nombre, apellido, usuario, contrasena y edad");
+        /*System.out.println("Ingrese su nombre, apellido, usuario, contrasena y edad");
         Usuario usu1= new Usuario(leer.next(), leer.next(), leer.next(), leer.next(), leer.nextInt(), 100);
         System.out.println(usu1.toString());
         System.out.println("Indique el gasto electrico");
         usu1.pagar(leer.nextInt());
-        System.out.println(usu1);
+        System.out.println(usu1);*/
         
         
+       /*Libro libro1 = new Libro();
+       libro1.cargas();
+       
+       
+       
+       /*System.out.println("Indique los siguientes datos del libro:");
+       System.out.println("1. ISBN");
+       libro1.cargaISBN(leer.nextInt());
+       System.out.println("2. Titulo del libro");                                                   
+       libro1.cargaTitulo(leer.next());
+       System.out.println("3. Autor del libro");
+       libro1.cargaAutor(leer.next());
+       System.out.println("4. Numero de paginas del libro");
+       libro1.cargaNdp(leer.nextInt());
+       
+       libro1.informe();*/
+       
+       
+       /*Circun circ1 = new Circun ();
+       circ1.crearCircunferencia();
+       
+        System.out.println("El area es: " +circ1.area() + " y el perimetro es: " + circ1.perimetro());*/
+       
+       /*Operacion OP1 = new Operacion ();
+       OP1.crearOperacion();
+        System.out.println("La suma es: "+ OP1.sumar()+ " la resta es: " + OP1.restar()+ " la multiplicacion es: " + OP1.multiplicar() + " y la division es: " +OP1.dividir());
+       */
+       
+       /*Rectangulo rec1 = new Rectangulo ();
+       rec1.crearRectangulo();
+        System.out.println("La superficie del rectangulo es: " + rec1.superificie() + " y su perimetro es: " + rec1.perimetro());
+       rec1.imprimir(); */
+       
+       /*Cancion canc1 = new Cancion ();
+       canc1.carga();*/
+       
+       /*Puntos pt1 = new Puntos ();
+       pt1.crearPuntos();
+        System.out.println("La distancia entre los puntos es de " + pt1.distancia()); */
+       
+       
     }
     
 }
