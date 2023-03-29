@@ -13,6 +13,7 @@ import java.util.Scanner;
  */
 public class Circun {
     private double radio;
+    Scanner leer = new Scanner (System.in);
 
     public Circun(double radio) {
         this.radio = radio;
@@ -29,7 +30,6 @@ public class Circun {
     public void setRadio(double radio) {
         this.radio = radio;
     }
-    Scanner leer = new Scanner (System.in);
     
     public void crearCircunferencia(){
         System.out.println("Indique el valor del radio");

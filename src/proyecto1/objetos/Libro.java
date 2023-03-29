@@ -18,6 +18,7 @@ public class Libro {
     public String Titulo;
     public String Autor;
     public int numero_de_pags;
+    Scanner leer = new Scanner (System.in);
 
     public Libro(int ISBN, String Titulo, String Autor, int numero_de_pags) {
         this.ISBN = ISBN;
@@ -28,7 +29,7 @@ public class Libro {
 
     public Libro() {
     }
-    Scanner leer = new Scanner (System.in);
+    
     public void cargas () {
         System.out.println("Indique el numero ISBN");
         this.ISBN = leer.nextInt();

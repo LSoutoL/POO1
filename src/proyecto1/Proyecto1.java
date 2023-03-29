@@ -8,6 +8,10 @@ package proyecto1;
 import java.util.Scanner;
 import proyecto1.objetos.Cancion;
 import proyecto1.objetos.Circun;
+import proyecto1.objetos.Cocina;
+import proyecto1.objetos.Cuenta;
+import proyecto1.objetos.Empleado;
+import proyecto1.objetos.Juego;
 import proyecto1.objetos.Libro;
 import proyecto1.objetos.Operacion;
 import proyecto1.objetos.Puntos;
@@ -34,8 +38,9 @@ public class Proyecto1 {
         System.out.println(usu1);*/
         
         
-       /*Libro libro1 = new Libro();
+       /*Libro libro1 = new Libro ();
        libro1.cargas();
+       libro1.informe();*/
        
        
        
@@ -74,7 +79,30 @@ public class Proyecto1 {
        pt1.crearPuntos();
         System.out.println("La distancia entre los puntos es de " + pt1.distancia()); */
        
+       /*Juego j1 = new Juego ();
+       j1.login();
+       j1.iniciar_juego();
+       j1.imprime();*/
        
+       /*Cocina miCocina = new Cocina ();
+       miCocina.Misingredientes();
+       miCocina.NuevaReceta();
+       miCocina.BuscarReceta();
+       miCocina.BuscarPorIngredientes();*/
+       
+       /*Cuenta miCuenta = new Cuenta (2000, "Jose");
+       miCuenta.retirar_dinero();
+       System.out.println(miCuenta);*/
+     
+       Empleado emple = new Empleado ();
+        System.out.println("Ingrese el nombre del empleado");
+        emple.setNombre(leer.next());
+        System.out.println("Indique la edad de " + emple.getNombre());
+        emple.setEdad(leer.nextInt());
+        System.out.println("Ingrese el salario de " + emple.getNombre());
+        emple.setSalario(leer.nextDouble());
+        
+        System.out.println("El aumento sera de " + emple.CalcularAumento());
     }
     
 }
