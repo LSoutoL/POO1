@@ -15,7 +15,9 @@ import proyecto1.objetos.Juego;
 import proyecto1.objetos.Libro;
 import proyecto1.objetos.Operacion;
 import proyecto1.objetos.Puntos;
+import proyecto1.objetos.Recetas;
 import proyecto1.objetos.Rectangulo;
+import proyecto1.objetos.Rectangulo2;
 import proyecto1.objetos.Usuario;
 
 
@@ -84,17 +86,24 @@ public class Proyecto1 {
        j1.iniciar_juego();
        j1.imprime();*/
        
-       /*Cocina miCocina = new Cocina ();
+       Cocina miCocina = new Cocina ();
+       Recetas [] misRecetas = miCocina.NuevaReceta();
        miCocina.Misingredientes();
-       miCocina.NuevaReceta();
-       miCocina.BuscarReceta();
-       miCocina.BuscarPorIngredientes();*/
+       miCocina.BuscarReceta(misRecetas);
+       miCocina.BuscarPorIngredientes(misRecetas);
+         
+      
+        
+        }
        
+       
+      
+              
        /*Cuenta miCuenta = new Cuenta (2000, "Jose");
        miCuenta.retirar_dinero();
        System.out.println(miCuenta);*/
      
-       Empleado emple = new Empleado ();
+       /*Empleado emple = new Empleado ();
         System.out.println("Ingrese el nombre del empleado");
         emple.setNombre(leer.next());
         System.out.println("Indique la edad de " + emple.getNombre());
@@ -102,7 +111,14 @@ public class Proyecto1 {
         System.out.println("Ingrese el salario de " + emple.getNombre());
         emple.setSalario(leer.nextDouble());
         
-        System.out.println("El aumento sera de " + emple.CalcularAumento());
+        System.out.println("El aumento sera de " + emple.CalcularAumento());*/
+       
+       /*Rectangulo2 rectang = new Rectangulo2 ();
+        System.out.println("Indique uno de los lados del rectangulo");
+        rectang.setLado1(leer.nextInt());
+        System.out.println("Indique el otro lado");
+        rectang.setLado2(leer.nextInt());
+        System.out.println("El area del rectangulo es: " + rectang.calcular_area());*/
     }
     
-}
+

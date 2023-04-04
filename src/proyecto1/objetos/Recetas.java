@@ -16,9 +16,19 @@ public class Recetas {
     private String [] ingredientes;
     //posible matriz para agregar cantidades.
     private String [] pasos;
-    Scanner leer = new Scanner(System.in);
+    private int num;
+    private int num1;
+    
 
 public Recetas() {
+    }
+
+    public Recetas(String nombre, String[] ingredientes, String[] pasos, int num, int num1) {
+        this.nombre = nombre;
+        this.ingredientes = ingredientes;
+        this.pasos = pasos;
+        this.num = num;
+        this.num1 = num1;
     }
 
     public String getNombre() {
@@ -33,6 +43,14 @@ public Recetas() {
         return pasos;
     }
 
+    public int getNum() {
+        return num;
+    }
+
+    public int getNum1() {
+        return num1;
+    }
+
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
@@ -44,32 +62,28 @@ public Recetas() {
     public void setPasos(String[] pasos) {
         this.pasos = pasos;
     }
-    
-public void IngresarReceta (){
-    System.out.println("Ingrese el nombre de la receta");
-    this.nombre=leer.nextLine();
-    
-    System.out.println("Indique la cantidad de ingredientes de la receta");
-    int num = leer.nextInt();
-    
-    ingredientes= new String [num];
-    for (int i = 0; i <num; i++) {
-        System.out.println("Ingrese el ingrediente "+ (i+1));
-        ingredientes [i]= leer.nextLine();
-        leer.next();
-    }
-    System.out.println("Indique la cantidad de pasos de la receta");
-    int num1 = leer.nextInt();
-    
-    pasos = new String [num1];
-    for (int i = 0; i <num1; i++) {
-        System.out.println("Ingrese el "+ (i+1) + " paso:");
-        pasos [i]= leer.nextLine();
-        leer.next();
-    }
-}    
 
+    public void setNum(int num) {
+        this.num = num;
+    }
 
+    public void setNum1(int num1) {
+        this.num1 = num1;
+    }
+
+    public void mostraringredientes (){
+        for (int i = 0; i < num; i++) {
+            System.out.println(ingredientes[i]);
+        }        
+    }
+    
+    public void mostrarpasos (){
+        for (int i = 0; i < num1; i++) {
+            System.out.println(pasos[i]);
+        }
+    }
+
+    
 }
 
 
