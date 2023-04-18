@@ -5,6 +5,7 @@
  */
 package proyecto1.objetos;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -75,8 +76,8 @@ public class Cocina {
        for (int i = 0; i <receta1.length; i++) {
         if (nombre.equals(receta1[i].getNombre())){
             encuentro=true;
-            receta1[i].mostraringredientes();
-            receta1[i].mostrarpasos();
+            System.out.println(Arrays.toString(receta1[i].getIngredientes()));
+            System.out.println(Arrays.toString(receta1[i].getPasos()));
        }
         }
        if (encuentro==false){
@@ -98,7 +99,7 @@ public class Cocina {
                }
            if (coinc==true){
               System.out.println( receta1[i].getNombre() + " contiene tus ingredientes. Sus pasos son:");
-               receta1[i].mostrarpasos();
+               System.out.println(Arrays.toString(receta1[i].getPasos()));
        }       
        }
        }

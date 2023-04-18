@@ -90,11 +90,8 @@ public class Proyecto1 {
        Recetas [] misRecetas = miCocina.NuevaReceta();
        miCocina.Misingredientes();
        miCocina.BuscarReceta(misRecetas);
-       miCocina.BuscarPorIngredientes(misRecetas);
-         
-      
-        
-        }
+       miCocina.BuscarPorIngredientes(misRecetas);        
+       
        
        
       
@@ -120,5 +117,6 @@ public class Proyecto1 {
         rectang.setLado2(leer.nextInt());
         System.out.println("El area del rectangulo es: " + rectang.calcular_area());*/
     }
+}
     
 

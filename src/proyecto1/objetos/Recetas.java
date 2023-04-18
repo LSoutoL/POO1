@@ -29,6 +29,8 @@ public Recetas() {
         this.pasos = pasos;
         this.num = num;
         this.num1 = num1;
+        this.ingredientes=ingredientes;
+        this.pasos=pasos;
     }
 
     public String getNombre() {
@@ -70,20 +72,6 @@ public Recetas() {
     public void setNum1(int num1) {
         this.num1 = num1;
     }
-
-    public void mostraringredientes (){
-        for (int i = 0; i < num; i++) {
-            System.out.println(ingredientes[i]);
-        }        
-    }
-    
-    public void mostrarpasos (){
-        for (int i = 0; i < num1; i++) {
-            System.out.println(pasos[i]);
-        }
-    }
-
-    
 }
 
 
